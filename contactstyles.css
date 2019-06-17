@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding:0px
+}
+
+html{ 
+    background-color:black;
+    
+}
+body{
+    margin: 0px;
+    
+   
+   }
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    /* grid-gap: 2em; */
+    justify-content: center;
+    /* font-size: 40px; */
+    font-family:'Luckiest Guy', Cursive;
+    width: 100%;
+    align-content: center;
+    min-height: 100px;
+    /* max-height: 125px; */
+    height: 100%;
+    background-image: url(niccagerainbow.jpg);
+    background-size: 100px;
+    
+}
+.headertop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+}
+    .welcometitle {
+        color:green;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contactheader {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+    }
+    .contactheader a{
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+        transition: 0s;
+        width: 100%;
+        text-align: center;
+    }
+    .contactheader a:hover {
+        color: black;
+
+    }
+    h2 {
+        color:white;
+        font-size: 14px;
+        font-family: 'Courier New', Courier, monospace;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .fun { 
+        width: 100%;
+    }
+
+    .teleport {
+        width: 100%;
+    }
+   
+.baselinks {
+    color:blue;
+    font-size: 24px;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+  
+
+    
+}
+        .baselinks > .index a{
+            font-family: "Ubuntu Condensed", sans-serif;
+            color: blue;
+            text-decoration: none;
+            transition: 0.25s;
+
+        }
+
+        .baselinks > .index a:hover {
+            color:red;
+            letter-spacing: 2px;
+        }
+
+        .baselinks > .about a{
+            font-family: "Ubuntu Condensed", sans-serif;
+            color: blue;
+            text-decoration: none;
+            transition: 0.25s;
+
+        }
+
+        .baselinks > .about a:hover {
+            color:red;
+            letter-spacing: 2px;
+        }
+
+        .baselinks > .menu a{
+            font-family: "Ubuntu Condensed", sans-serif;
+            color: blue;
+            text-decoration: none;
+            transition: 0.25s;
+
+        }
+
+        .baselinks > .menu a:hover {
+            color:red;
+            letter-spacing: 2px;
+        }
+
+        .baselinks > .contact a{
+            font-family: "Ubuntu Condensed", sans-serif;
+            color:blue;
+            text-decoration: none;
+            transition: 0.25s;
+
+        }
+
+        .baselinks > .contact a:hover {
+        color:red;
+        letter-spacing: 2px;
+        }
+        .treeicon {
+            color:green;
+            font-size: 40px;
+        }
+        .treeicona {
+            text-align: right;
+        }
+        .treeiconb {
+            text-align: left;
+        }
