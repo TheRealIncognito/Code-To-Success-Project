@@ -1,36 +1,46 @@
-*,
-*::before,
-*::after{
-    margin: 0px;
-    padding:0px
+* {
+    position: relative;
+}
+html {
+    background-color: black;
+
+
 }
 
-html{ 
-    background-color:black;
-    
-}
-body{
+body {
+    background-image: url(assets/jungle.jpg);
+    height: 500px;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px;
-    
-   
-   }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .header {
+    grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
-    /* grid-gap: 2em; */
     justify-content: center;
-    /* font-size: 40px; */
-    font-family:'Luckiest Guy', Cursive;
+    font-family: 'Luckiest Guy', Cursive;
     width: 100%;
     align-content: center;
     min-height: 100px;
-    /* max-height: 125px; */
     height: 100%;
-    background-image: url(niccagerainbow.jpg);
-    background-size: 100px;
-    
+    background-image: url(assets/galaxypic.jpeg);
+    background-position: center;
+    background-size: 300px;
+
 }
+
 .headertop {
     display: flex;
     flex-direction: column;
@@ -39,124 +49,242 @@ body{
     background-color: black;
 
 }
-    .welcometitle {
-        color:green;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .contactheader {
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
 
-    }
-    .contactheader a{
-        color: white;
-        text-decoration: none;
-        font-size: 11px;
-        transition: 0s;
-        width: 100%;
-        text-align: center;
-    }
-    .contactheader a:hover {
-        color: black;
+.welcometitle {
+    color: green;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    }
-    h2 {
-        color:white;
-        font-size: 14px;
-        font-family: 'Courier New', Courier, monospace;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        
-    }
+.contactheader {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
 
-    .fun { 
-        width: 100%;
-    }
+}
 
-    .teleport {
-        width: 100%;
-    }
-   
-.baselinks {
-    color:blue;
+.contactheader a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    transition: 0s;
+    width: 100%;
+    text-align: center;
+}
+
+.contactheader a:hover {
+    color: black;
+
+}
+
+h2 {
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fun {
+    width: 100%;
+}
+
+.teleport {
+    width: 100%;
+}
+
+.baselinkHolder {
+    color: blue;
     font-size: 24px;
-    display:grid;
+    display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-  
 
+
+}
+.baselink {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: blue;
+    text-decoration: none;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.baselink:hover {
+    color: red;
+    letter-spacing: 2px;
+}
+.baselinkc {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: rgb(138, 136, 136);
+    text-decoration: none;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.baselinkc:hover {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(assets/jungle.jpg);
+    height: 100%;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centertext {
+    grid-row: 2;
+
+}
+
+.topheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: blue;
+    background-color: black;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: inset 10px 10px 33px -4px rgba(0, 0, 0, 0.75);
+
+}
+.contactus {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-attachment: fixed;
+    width: 500px;
+    height:300px;
     
 }
-        .baselinks > .index a{
-            font-family: "Ubuntu Condensed", sans-serif;
-            color: blue;
-            text-decoration: none;
-            transition: 0.25s;
+#fullname {
+    grid-column: 2;
+    width: 300px;
 
-        }
+}
+#email {
+    grid-column: 2;
+    width: 300px;
+}
+#message {
+    grid-column: 2;
 
-        .baselinks > .index a:hover {
-            color:red;
-            letter-spacing: 2px;
-        }
+}
+.contactus input {
+    font-size: 1.5em;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: pink;
+    background-color: rgb(143, 142, 142);
+    width: 250px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0px;
 
-        .baselinks > .about a{
-            font-family: "Ubuntu Condensed", sans-serif;
-            color: blue;
-            text-decoration: none;
-            transition: 0.25s;
+}
 
-        }
+.columns {
+    background-image: url(https://www.placecage.com/gif/227/200);
+    height: 400px;
+    background-color: 0;
+    color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Luckiest Guy", Cursive;
+    margin: 0px;
 
-        .baselinks > .about a:hover {
-            color:red;
-            letter-spacing: 2px;
-        }
+}
 
-        .baselinks > .menu a{
-            font-family: "Ubuntu Condensed", sans-serif;
-            color: blue;
-            text-decoration: none;
-            transition: 0.25s;
+p {
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+    margin: 0px;
+    text-align: center;
 
-        }
+    font-size: 24px;
+}
 
-        .baselinks > .menu a:hover {
-            color:red;
-            letter-spacing: 2px;
-        }
+p:hover {
+    border-bottom: 5px solid green;
+}
 
-        .baselinks > .contact a{
-            font-family: "Ubuntu Condensed", sans-serif;
-            color:blue;
-            text-decoration: none;
-            transition: 0.25s;
+.map {
+    height: 400px;
+    width: 100vw;
+    padding-bottom: 100px;
+}
 
-        }
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 40px;
+    border-radius: 4px;
+    font-family: 'Luckiest Guy', Cursive;
+}
 
-        .baselinks > .contact a:hover {
-        color:red;
-        letter-spacing: 2px;
-        }
-        .treeicon {
-            color:green;
-            font-size: 40px;
-        }
-        .treeicona {
-            text-align: right;
-        }
-        .treeiconb {
-            text-align: left;
-        }
+h2 {
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.treeicon {
+    color: green;
+    font-size: 40px;
+}
+
+.treeicona {
+    text-align: right;
+}
+
+.treeiconb {
+    text-align: left;
+}

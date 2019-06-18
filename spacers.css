@@ -1,4 +1,11 @@
+* {
+    position: relative;
+}
 .spacer40 {
     height: 40px;
+    width: 100%;
+}
+.spacer1000 {
+    height: 1000px;
     width: 100%;
 }

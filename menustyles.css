@@ -1,109 +1,128 @@
-html{ 
-    background-color:black;
+* {
+    position: relative;
+}
+html {
+    background-color: black;
 
 }
-body{
+
+body {
+    background-image: url(assets/jungle.jpg);
+    height: 500px;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
-    
-   
-   }
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .header {
+    grid-row: 1;
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     font-size: 40px;
     border-radius: 4px;
-    font-family:'Luckiest Guy', Cursive;
-    
+    font-family: 'Luckiest Guy', Cursive;
+    grid-row: 1;
+}
 
-} 
-    h1{
-        color:green;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px ; 
-        margin: 0px;
-    }
-    h2 {
-        color:white;
-        font-size: 14px;
-        font-family: 'Courier New', Courier, monospace;
-        display: grid;
-        grid-template-columns: 1fr 1.25fr 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0px;
-    }
+h1 {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0px;
+}
 
-    .fun {
-        text-align: right;
-    }
+h2 {
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
 
-    .teleport {
-        text-align: left;
-        
-    }
-    h2 a{
-        text-decoration: none;
-        color:white;
-        transition: 0s;
+.fun {
+    text-align: right;
+}
 
-    }
+.teleport {
+    text-align: left;
 
-    h2 a:hover{
-        color: black;
+}
 
-    }
-      
+h2 a {
+    text-decoration: none;
+    color: white;
+    transition: 0s;
+
+}
+
+h2 a:hover {
+    color: black;
+
+}
+
 .baselinkHolder {
-    color:blue;
-    
+    color: blue;
+
     font-size: 24px;
-    display:grid;
+    display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
 
-    
+
 }
-        .baselink {
-            font-family: "Ubuntu Condensed", sans-serif;
-            color: blue;
-            text-decoration: none;
-            transition: 0.25s;
-            width: 100%;
-            height: 100%;
-            display:flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-        }
 
-        .baselink:hover{
-            color:red;
-            letter-spacing: 2px;
-        }
+.baselink {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: blue;
+    text-decoration: none;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
-    .heygirlpic img{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-        width: 100vw;
-        height: 510px;
-    }
+.baselink:hover {
+    color: red;
+    letter-spacing: 2px;
+}
+
+.heygirlpic img {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    width: 100vw;
+    height: 510px;
+}
+
 .background {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(jungle.jpg);
+    background-image: url(assets/jungle.jpg);
     height: 500px;
     width: 100vw;
     background-attachment: fixed;
@@ -111,39 +130,43 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .centertext {
     grid-row: 2;
-    
+
 }
+
 .topheader {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 48px;
-    color:blue;
+    color: blue;
     background-color: black;
     width: 250px;
     border-radius: 4px;
-    box-shadow: inset 10px 10px 33px -4px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 33px -4px rgba(0, 0, 0, 0.75);
 
 }
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color:pink;
-    background-color:rgb(143, 142, 142);
+    color: pink;
+    background-color: rgb(143, 142, 142);
     width: 250px;
     border-radius: 4px;
     text-align: center;
     margin: 0px;
 
 }
+
 .columns {
     background-image: url(https://www.placecage.com/gif/227/200);
     height: 400px;
-    background-color:0;
+    background-color: 0;
     color: green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -151,41 +174,47 @@ body{
     align-items: center;
     font-family: "Luckiest Guy", Cursive;
     margin: 0px;
-            
+
 }
+
 p {
     border-bottom: 5px solid transparent;
     border-radius: 10px;
     transition: 1s;
     margin: 0px;
     text-align: center;
-    
+
     font-size: 24px;
 }
+
 p:hover {
     border-bottom: 5px solid green;
 }
+
 .map {
     height: 400px;
     width: 100vw;
     padding-bottom: 100px;
 }
+
 .bottom {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     font-size: 40px;
     border-radius: 4px;
-    font-family:'Luckiest Guy', Cursive;
+    font-family: 'Luckiest Guy', Cursive;
 }
+
 .treeicon {
-    color:green;
+    color: green;
     font-size: 40px;
 }
+
 .treeicona {
     text-align: right;
 }
+
 .treeiconb {
     text-align: left;
 }
-
