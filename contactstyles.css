@@ -180,33 +180,105 @@ h2 {
 
 }
 .contactus {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: inherit;
+    align-content: center;
+    background-color: black;
     background-attachment: fixed;
-    width: 500px;
-    height:300px;
+    width: 750px;
+    height:100%;
     
+}
+.contactus input {
+    font-size: 1.5em;
+    background-color: black;
+    font-family: inherit;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid rgba(110, 1, 1, 0.616);
+    transition: all 0.3s;
+    
+}
+.contactus input:focus, .contactus textarea:focus {
+    border: solid rgba(1, 110, 101, 0.747);
+    outline: none;
+}
+.contactus label {
+    visibility: hidden;
+    font-size: 11px;
+    transition: all 0.3s;
+    color: rgba(1, 110, 101, 0.747);
+
+}
+
+.contactus textarea {
+    grid-column: 2;
+    color: white;
+    background-color: black;
+    border: 3px solid rgba(110, 1, 1, 0.616);
+    min-width: 298px;
+    max-width: 298px;
+    min-height: 100px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    
+}
+.contactus input:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);    
+}
+.contactus textarea:focus {
+    outline: none;
+}
+.contactus textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);    
+}
+.contactus input:focus ::-webkit-input-placeholder, .contactus textarea:focus ::-webkit-input-placeholder {
+    color: black;
+}
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
 }
 #fullname {
     grid-column: 2;
-    width: 300px;
+    min-width: 300px;
 
 }
 #email {
     grid-column: 2;
-    width: 300px;
+    min-width: 300px;
 }
-#message {
-    grid-column: 2;
+.buttonsend {
+    background-color: rgb(65, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(110, 1, 1, 0.616);
+    width: 50px;
+    align-self: center;
+    transition: all 0.00001s;
+}
+.buttonsend:active {
+    box-shadow: 5px 5px 30px rgba(0, 132, 255, 0.521);
+    outline: none;
+    border: solid rgba(1, 110, 101, 0.747);
+}
+.buttonsend:focus {
+    outline: none;
+    transition: 0.1s;
+}
 
-}
-.contactus input {
-    font-size: 1.5em;
-}
 .footer {
     display: flex;
     justify-content: center;

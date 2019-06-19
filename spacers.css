@@ -1,6 +1,10 @@
 * {
     position: relative;
 }
+.spacer20{
+    height: 20px;
+    width: 100%;
+}
 .spacer40 {
     height: 40px;
     width: 100%;

@@ -1,0 +1,26 @@
+@media (max-width: 615px) {
+    .header {
+        flex-direction: column;
+        height: 100%;
+
+    }
+    h1 {
+        order: 1;
+    }
+    h2 {
+        order: 2;
+        width: 100%;
+        
+    }
+    .baselinkHolder {
+        order: 3;
+        flex-direction: column;
+    
+    }
+    .columns{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-image: url(https://www.placecage.com/gif/135/100);
+
+    }
+}
